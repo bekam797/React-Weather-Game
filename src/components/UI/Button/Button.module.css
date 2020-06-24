@@ -1,0 +1,59 @@
+.Button {
+    width: 220px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 22px;
+    font-size: 16px;
+    position: relative;
+    text-align: right;
+}
+
+@media (max-width: 559px) {
+    .Button {
+        width: 100%;
+    }
+}
+
+.Button span {
+    width: 60px;
+    height: 100%;
+    background-color: #707070;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.BtnNext {
+    width: 100%;
+    max-width: 464px;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC11E;
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.BtnNext:disabled {
+    background: #707070;
+    color: #383333;
+    opacity: 39%;
+}
+
+.Success {
+    border: 1px solid #2FCD8A;
+}
+
+.Danger {
+    border: 1px solid #E03010;
+}

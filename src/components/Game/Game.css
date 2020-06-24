@@ -1,0 +1,22 @@
+.Game {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.Game h1 {
+    font-size: 24px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.Game button:first-of-type{
+    margin-right: 24px;
+}
+
+@media (max-width: 559px) {
+    .Game button:first-of-type{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}

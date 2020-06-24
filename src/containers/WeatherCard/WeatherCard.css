@@ -1,0 +1,17 @@
+.WeatherCard {
+    background-color: #181B23;
+    width: 768px;
+    height: 553px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+    padding: 48px;
+    margin: auto;
+    margin-top: calc(50% - 37%);
+}
+
+@media (max-width: 768px) {
+    .WeatherCard{
+        width: 100%;
+        border: none;
+    }
+}

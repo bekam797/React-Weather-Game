@@ -1,0 +1,9 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header p {
+    margin: 0;
+    font-size: 24px;
+}

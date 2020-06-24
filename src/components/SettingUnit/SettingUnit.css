@@ -1,0 +1,107 @@
+.SettingUnit h1 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.SettingHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.SettingHead h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.SettingRadioButton{
+  margin-bottom: 24px;
+}
+
+/* SettingRadioButton label */
+
+.SettingRadioButton label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+/* SettingRadioButton input */
+
+.SettingRadioButton input {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* .SettingDesign */
+
+.SettingDesign {
+  width: 24px;
+  height: 24px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-right: 16px;
+  position: relative;
+}
+
+.SettingDesign::before,
+.SettingDesign::after {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.SettingDesign:before {
+  background: #FFC11E;
+  opacity: 0;
+  transition: .3s;
+}
+
+.SettingDesign::after {
+  background: #FFC11E;
+  opacity: .3;
+  transition: .6s;
+}
+
+/* .SettingText */
+
+.SettingText {
+  color: white;
+  font-weight: bold;
+}
+
+.SettingRadioButton input:checked+.SettingDesign::before {
+  opacity: 1;
+  transform: scale(.6);
+}
+
+.SettingRadioButton input:hover+.SettingDesign:before,
+.SettingRadioButton input:focus+.SettingDesign:before {
+  background: #FFC11E;
+}
+
+.SettingRadioButton input:hover~.text {
+  color: #FFC11E;
+}
+
+.SettingRadioButton input:focus+.SettingDesign::after,
+.SettingRadioButton input:active+.SettingDesign::after {
+  opacity: .1;
+  transform: scale(2);
+}
+  
